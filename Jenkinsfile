@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'docker run nginx:latest'
+                sh 'docker version'
             }
         }
         stage('Test') {
