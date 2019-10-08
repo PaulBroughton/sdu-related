@@ -13,6 +13,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'packer version'
+                sh 'ansible --version'
+                sh 'terraform version'
             }
         }
         stage('Test') {
