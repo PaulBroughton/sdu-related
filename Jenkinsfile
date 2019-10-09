@@ -15,6 +15,9 @@ pipeline {
                 sh 'packer version'
                 sh 'ansible --version'
                 sh 'terraform version'
+                sh 'docker version'
+                sh 'make --version'
+                sh 'kubectl --help'
             }
         }
         stage('Test') {
